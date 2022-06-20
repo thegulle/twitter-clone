@@ -1,3 +1,8 @@
+# Twitter Clone
+
+## Vue3 + TypeScript + Pinia
+###### Author : github.com/thegulle
+
 # twitter-clone
 
 ## Project setup
@@ -19,6 +24,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
