@@ -1,6 +1,6 @@
 # Twitter Clone
 
-## Vue3 + TypeScript + Pinia
+## Vue3 + TypeScript + Pinia + Tailwind CSS
 ###### Author : github.com/thegulle
 
 # twitter-clone
