@@ -79,20 +79,24 @@ export const useTweetStore = defineStore('TweetStore', () => {
     ])
 
     const addTweet = async (tweet: any) => {
-        await tweets.value.push({
-            id: 0,
-            user: {
-                id: userSession.id,
-                name: userSession.name,
-                username: userSession.username,
-                avatar: userSession.avatar
-            },
-            content: tweet,
-            likes: 0,
-            retweets: 0,
-            comments: 0,
-            date: new Date().toISOString().split('T')[0]
-        })
+        if (tweet !== '' && tweet !== null) {
+            await tweets.value.push({
+                id: 0,
+                user: {
+                    id: userSession.id,
+                    name: userSession.name,
+                    username: userSession.username,
+                    avatar: userSession.avatar
+                },
+                content: tweet,
+                likes: 0,
+                retweets: 0,
+                comments: 0,
+                date: new Date().toISOString().split('T')[0]
+            })
+        } else {
+            alert('Tweet is empty')
+        }
     }
 
     const cleanObject = (form: any) => {
